@@ -203,7 +203,7 @@ function Nav(rootEl) {
     }
 
     function init() {
-        rootEl.setAttribute('data-o-ft-hierarchical-nav--js', '');
+        rootEl.setAttribute('data-o-hierarchical-nav--js', '');
         setTabIndexes();
         setLayersContext();
         rootDelegate.on('click', handleClick);
