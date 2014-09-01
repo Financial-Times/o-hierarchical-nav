@@ -77,7 +77,7 @@
         padding: 15px 33px;
         min-height: 100px;
         width: 100%;
-        color: #333333;
+        color: oColorsGetPaletteColor(white);
         background-color: oColorsGetPaletteColor(pink-tint1);
         z-index: $_o-hierarchical-nav-mega-dropdown-zindex;
     }

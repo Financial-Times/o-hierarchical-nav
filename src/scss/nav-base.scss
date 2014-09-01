@@ -21,7 +21,7 @@
         color: #ffffff;
 
         #{$o-hoverable-if-hover-enabled} &:hover {
-            color: oColorsGetColorFor(link-alt-hover, text);                
+            color: oColorsGetColorFor(link-title-hover, text);                
         }
     }
 }
