@@ -1,39 +1,39 @@
 {
-    "description": "Responsive hierarchical nav",
-    "origamiType": "module",
-    "origamiVersion": 1,
-    "support": "alberto.elias@ft.com",
-    "supportStatus": "active",
-    "browserFeatures": {
-        "required": [
-            "classlist",
-            "createevent"
-        ],
-        "optional": [
-            "datauri",
-            "cssgradients",
-            "mediaqueries",
-            "csstransitions"
-        ]
-    },
-    "ci": {
-        "travis": "https://api.travis-ci.org/repos/Financial-Times/o-hierarchical-nav/builds.json"
-    },
-    "demos": [
-        {
-            "path": "/demos/nav.html",
-            "expanded": false,
-            "description": ""
-        },
-        {
-            "path": "/demos/responsive-nav.html",
-            "expanded": true,
-            "description": ""
-        },
-        {
-            "path": "/demos/mega-dropdown.html",
-            "expanded": false,
-            "description": ""
-        }
-    ]
+	"description": "Responsive hierarchical nav",
+	"origamiType": "module",
+	"origamiVersion": 1,
+	"support": "alberto.elias@ft.com",
+	"supportStatus": "active",
+	"browserFeatures": {
+		"required": [
+			"classlist",
+			"createevent"
+		],
+		"optional": [
+			"datauri",
+			"cssgradients",
+			"mediaqueries",
+			"csstransitions"
+		]
+	},
+	"ci": {
+		"travis": "https://api.travis-ci.org/repos/Financial-Times/o-hierarchical-nav/builds.json"
+	},
+	"demos": [
+		{
+			"path": "/demos/nav.html",
+			"expanded": false,
+			"description": ""
+		},
+		{
+			"path": "/demos/responsive-nav.html",
+			"expanded": true,
+			"description": ""
+		},
+		{
+			"path": "/demos/mega-dropdown.html",
+			"expanded": false,
+			"description": ""
+		}
+	]
 }

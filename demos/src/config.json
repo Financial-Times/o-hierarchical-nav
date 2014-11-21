@@ -1,22 +1,22 @@
 {
-    "options": {
-        "sass": "demos/src/scss/demo.scss",
-        "js": "demos/src/responsive-nav.js",
-        "bodyClasses": "o-hoverable-on"
-    },
-    "demos": [
-        {
-            "name": "responsive-nav",
-            "template": "demos/src/responsive-nav.mustache"
-        },
-        {
-            "name": "mega-dropdown",
-            "template": "demos/src/mega-dropdown.mustache"
-        },
-        {
-            "name": "nav",
-            "template": "demos/src/nav.mustache",
-            "js": "demos/src/nav.js"
-        }
-    ]
+	"options": {
+		"sass": "demos/src/scss/demo.scss",
+		"js": "demos/src/responsive-nav.js",
+		"bodyClasses": "o-hoverable-on"
+	},
+	"demos": [
+		{
+			"name": "responsive-nav",
+			"template": "demos/src/responsive-nav.mustache"
+		},
+		{
+			"name": "mega-dropdown",
+			"template": "demos/src/mega-dropdown.mustache"
+		},
+		{
+			"name": "nav",
+			"template": "demos/src/nav.mustache",
+			"js": "demos/src/nav.js"
+		}
+	]
 }

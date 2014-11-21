@@ -2,34 +2,34 @@ $o-fonts-path: 'http://build.origami.ft.com/files/o-fonts-assets@0.2.1/';
 @import "../../../main";
 
 .demo__title {
-    margin: 20px 0 10px 0;
-    border-top: 1px solid #ddd;
-    padding: 5px 0;
-    font-family: sans-serif;
-    font-size: 14px;
+	margin: 20px 0 10px;
+	border-top: 1px solid #dddddd;
+	padding: 5px 0;
+	font-family: sans-serif;
+	font-size: 14px;
 }
 
 .demo__mega-dropdown[aria-hidden=true] {
-    display: none;
+	display: none;
 }
 
 .o-hierarchical-nav {
-    background-color: #333;
+	background-color: #333333;
 
-    li {
-        font-size: 14px;
-        line-height: 16px;
-    }
-    a {
-        padding: 10px 20px;
-    }
+	li {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	a {
+		padding: 10px 20px;
+	}
 }
 
 .demo--vertical-theme {
-    @extend %o-hierarchical-nav--vertical-theme;
-    width: 300px;
+	@extend %o-hierarchical-nav--vertical-theme;
+	width: 300px;
 }
 
 .demo--horizontal-theme {
-    @extend %o-hierarchical-nav--horizontal-theme;
+	@extend %o-hierarchical-nav--horizontal-theme;
 }
