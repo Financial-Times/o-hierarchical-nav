@@ -2,67 +2,67 @@
 @include oFontsInclude(BentonSans, normal);
 
 .o-hierarchical-nav {
-    font-family: oFontsGetFontFamilyWithFallbacks(BentonSans);
-    white-space: nowrap;
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
+	font-family: oFontsGetFontFamilyWithFallbacks(BentonSans);
+	white-space: nowrap;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
 
-        li[aria-hidden=true] {
-            display: none;
-        }
-    }
+		li[aria-hidden=true] {
+			display: none;
+		}
+	}
 
-    a {
-        text-decoration: none;
-        cursor: pointer;
-        outline: none;
-        color: #ffffff;
+	a {
+		text-decoration: none;
+		cursor: pointer;
+		outline: none;
+		color: #ffffff;
 
-        #{$o-hoverable-if-hover-enabled} &:hover {
-            color: oColorsGetColorFor(link-title-hover, text);                
-        }
-    }
+		#{$o-hoverable-if-hover-enabled} &:hover {
+			color: oColorsGetColorFor(link-title-hover, text);
+		}
+	}
 }
 
 // Styles for all hierarchical levels
 [data-o-hierarchical-nav-level] {
-    li {
-        position: relative;
-        
-        > ul {
-            display: none;
-        }
+	li {
+		position: relative;
 
-        &[aria-expanded='true'] > ul {
-            display: block;
-        }
-    }
+		> ul {
+			display: none;
+		}
+
+		&[aria-expanded='true'] > ul {
+			display: block;
+		}
+	}
 }
 
 [data-o-hierarchical-nav-level='1'] {
-    & > a {
-        text-transform: uppercase;
-    }
+	> a {
+		text-transform: uppercase;
+	}
 }
 
 // Styles for parents of other navs or controlled elements
 [aria-controls] > a,
 .o-hierarchical-nav__parent > a {
 
-    i {
-        @include oFtIconsBaseIconStyles();
-    }
+	i {
+		@include oFtIconsBaseIconStyles();
+	}
 
-    .o-hierarchical-nav__parent__down-arrow {
-        @extend %o-ft-icons-icon--arrow-down;
-        font-size: 8px;
-    }
-    
-    .o-hierarchical-nav__parent__right-arrow {
-        @extend %o-ft-icons-icon--arrow-right;
-        font-size: 9px;
-        display: none;
-    }
+	.o-hierarchical-nav__parent__down-arrow {
+		@extend %o-ft-icons-icon--arrow-down;
+		font-size: 8px;
+	}
+
+	.o-hierarchical-nav__parent__right-arrow {
+		@extend %o-ft-icons-icon--arrow-right;
+		font-size: 9px;
+		display: none;
+	}
 }

@@ -39,12 +39,12 @@ Where a _navigation item_ is both a link and a parent or controller for mega-dro
 The `<li>` should be given a class of `o-hierarchical-nav__parent`, and should contain another `<ul>` list that declares its level via a data attribute:
 
 ```html
-    <li class="o-hierarchical-nav__parent"><a>Level 2 item with sub-level</a>
-        <ul data-o-hierarchical-nav-level="3">
-            <li><a>Level 3 item</a></li>
-            <li><a>Level 3 item</a></li>
-        </ul>
-    </li>
+<li class="o-hierarchical-nav__parent"><a>Level 2 item with sub-level</a>
+	<ul data-o-hierarchical-nav-level="3">
+		<li><a>Level 3 item</a></li>
+		<li><a>Level 3 item</a></li>
+	</ul>
+</li>
 ```
 
 When the nav item is clicked, the `<li>` will have an `aria-expanded` attribute toggled, which will control the visibility of the child list.
@@ -54,14 +54,13 @@ When the nav item is clicked, the `<li>` will have an `aria-expanded` attribute 
 The `<li>` should be given an `aria-controls` attribute with the value being the ID the DOM element to control, for example:
 
 ```html
-    <li aria-controls="megadropdown"><a>Mega dropdown</a></li>
-    
-    ...
-    
-    <div id="megadropdown" aria-hidden="true">
-        Mega-dropdown content
-    </div>
-    
+<li aria-controls="megadropdown"><a>Mega dropdown</a></li>
+
+...
+
+<div id="megadropdown" aria-hidden="true">
+	Mega-dropdown content
+</div>
 ```
 
 When the nav item is clicked, the element targeted by the `aria-control` attribute will have its `aria-hidden` attribute toggled.
@@ -76,11 +75,11 @@ __Horizontal navigation__ styles use [o-squishy-list](https://github.com/Financi
 
 ```html
 <nav>
-    <ul data-o-hierarchical-nav-level="1">
-        <li data-priority="2"><a>Important page</a></li>
-        <li data-priority="3"><a>Less important page</a></li>
-        <li data-priority="1"><a>Home</a></li>
-    </ul>
+	<ul data-o-hierarchical-nav-level="1">
+		<li data-priority="2"><a>Important page</a></li>
+		<li data-priority="3"><a>Less important page</a></li>
+		<li data-priority="1"><a>Home</a></li>
+	</ul>
 </nav>
 ```
 

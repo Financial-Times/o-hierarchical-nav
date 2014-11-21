@@ -1,17 +1,17 @@
 %o-hierarchical-nav--vertical-theme {
-    text-align: left;
+	text-align: left;
 
-    a {
-        display: block;
-    }
+	a {
+		display: block;
+	}
 
-    // Indent sub-levels
+	// Indent sub-levels
 
-    [data-o-hierarchical-nav-level='2'] {
-        padding-left: 10px;
-    }
+	[data-o-hierarchical-nav-level='2'] {
+		padding-left: 10px;
+	}
 
-    [data-o-hierarchical-nav-level='3'] {
-        padding-left: 10px;
-    }
+	[data-o-hierarchical-nav-level='3'] {
+		padding-left: 10px;
+	}
 }
