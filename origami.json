@@ -34,6 +34,11 @@
             "path": "/demos/mega-dropdown.html",
             "expanded": false,
             "description": ""
+        },
+        {
+            "path": "/demos/sub-component.html",
+            "expanded": false,
+            "description": ""
         }
     ]
 }

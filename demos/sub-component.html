@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="o-hoverable-on o-hoverable-on">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>o-hierarchical-nav: sub-component demo</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<script src="//polyfill.webservices.ft.com/v1/polyfill.min.js?features=classlist,createevent,datauri,cssgradients,mediaqueries,csstransitions,default"></script>
+	<style>body { margin: 0; } .demo-js .o--if-nojs { display: none; }</style>
+	<script>(function(d) { d.className = d.className + ' demo-js'; })(document.documentElement);</script>
+	<link rel="stylesheet" href="/bundles/css?modules=o-hierarchical-nav:/demos/src/scss/demo.scss,o-fonts@^1.4.0" />
+</head>
+<body>
+<h1 class="demo__title">Component sub-level nav</h1>
+
+<nav class="ft-search__nav o-header__primary__right o-header__nav--tools-theme o-hierarchical-nav" data-o-component="o-hierarchical-nav">
+    <ul data-o-hierarchical-nav-level="1">
+        <li class="ft-search__nav__items" data-o-hierarchical-nav--is-cloneable>
+            <form method="get" action="/search/" id="site-wide-search">
+                <input class="search-query" type="search" name="SearchText" id="site-wide-search-field" placeholder="Search by keyword...">
+                <input name="SearchButton" type="submit" style="display:none;">
+            </form>
+        </li>
+        <li data-more class="o-hierarchical-nav__parent" aria-hidden="true"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu</span> <i></i></a></li>
+    </ul>
+</nav>
+
+<script src="/bundles/js?modules=o-hierarchical-nav:/demos/src/responsive-nav.js,o-fonts@^1.4.0"></script>
+<script src="//registry.origami.ft.com/embedapi?autoload=resize"></script>
+</body>
+</html>

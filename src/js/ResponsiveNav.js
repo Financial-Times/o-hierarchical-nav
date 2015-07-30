@@ -1,4 +1,4 @@
-/*global require,module*/
+/*global require,module,document,HTMLElement*/
 'use strict';
 
 var SquishyList = require('o-squishy-list');
@@ -55,6 +55,15 @@ function ResponsiveNav(rootEl) {
 		moreListEl.appendChild(itemEl);
 	}
 
+	function cloneItemToMoreList(el) {
+		var cloneEl = el.cloneNode(true);
+		// remove the attributes that are only applicable to higher level
+		cloneEl.removeAttribute('data-priority');
+		cloneEl.removeAttribute('aria-hidden');
+		cloneEl.removeAttribute('data-o-hierarchical-nav--is-cloneable');
+		moreListEl.appendChild(cloneEl);
+	}
+
 	// For every hidden item, add it to the more list
 	function populateMoreList(hiddenEls) {
 		emptyMoreList();
@@ -63,8 +72,12 @@ function ResponsiveNav(rootEl) {
 			var aEl = hiddenEls[c].querySelector('a');
 			var ulEl = hiddenEls[c].querySelector('ul');
 
-			var aText = (typeof aEl.textContent !== 'undefined') ? aEl.textContent : aEl.innerText;
-			addItemToMoreList(aText, aEl.href, ulEl);
+			if (hiddenEls[c].hasAttribute('data-o-hierarchical-nav--is-cloneable')) {
+				cloneItemToMoreList(hiddenEls[c]);
+			} else {
+				var aText = (typeof aEl.textContent !== 'undefined') ? aEl.textContent : aEl.innerText;
+				addItemToMoreList(aText, aEl.href, ulEl);
+			}
 		}
 	}
 

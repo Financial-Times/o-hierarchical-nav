@@ -103,6 +103,12 @@ If there's a chance that all nav items will be hidden and added to the More list
 <li data-more class="o-hierarchical-nav__parent"><a><span class="nav__more--if-some">More</span><span class="nav__more--if-all">Menu</span></a></li>
 ```
 
+If there is a structure required for the styling of nav components (i.e. other elements are required for icon display) or elements that are not links but should reduce to a sub-level when screen space does not allow then you can add a 'data-o-hierarchical-nav--is-cloneable' attribute and the element will be deeply cloned rather than a new anchor tag with the text content copied.
+
+```html
+<li data-o-hierarchical-nav--is-cloneable><a><div>An item to clone</div><img src="" alt="icon"></a></li>
+```
+
 ## Vertical hierarchical nav
 
 To make a nav work in a vertical layout, add `data-o-hierarchical-nav-orientiation="vertical"` to the `<nav>`.
@@ -111,7 +117,7 @@ To make a nav work in a vertical layout, add `data-o-hierarchical-nav-orientiati
 
 Add a `<i></i>` to display an arrow icon at the end of an `<a>` element:
 
-```html 
+```html
 <li class="o-hierarchical-nav__parent"><a>Item 3.2 (parent) <i></i></a>
 ```
 

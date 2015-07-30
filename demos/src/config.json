@@ -18,6 +18,10 @@
             "name": "nav",
             "template": "demos/src/nav.mustache",
             "js": "demos/src/nav.js"
+        },
+        {
+            "name": "sub-component",
+            "template": "demos/src/sub-component.mustache"
         }
     ]
 }
