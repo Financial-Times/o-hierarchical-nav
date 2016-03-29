@@ -19,7 +19,7 @@
 	"ci": {
 		"circle": "https://circleci.com/api/v1/project/Financial-Times/o-hierarchical-nav"
 	},
-	"options": {
+	"demosDefaults": {
 		"sass": "demos/src/scss/demo.scss",
 		"js": "demos/src/responsive-nav.js",
 		"dependencies": ["o-fonts@^1.4.0"]
