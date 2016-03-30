@@ -64,6 +64,10 @@ function ResponsiveNav(rootEl) {
 		cloneEl.removeAttribute('data-o-hierarchical-nav-is-cloneable');
 		// recurse through children and amend any id values to maintain uniqueness
 		prefixIds(el);
+
+		// increase level of nested menus
+		incrementMenuDepths(cloneEl);
+
 		moreListEl.appendChild(cloneEl);
 	}
 
@@ -72,6 +76,28 @@ function ResponsiveNav(rootEl) {
 		while (prefixedNodes.length > 0) {
 			nextNode = prefixedNodes.pop();
 			nextNode.setAttribute('id', nextNode.getAttribute('id').replace(clonedIdPrefix, ''));
+		}
+	}
+
+	function incrementMenuDepths(el) {
+		// data-o-hierarchical-nav-level attribute is incremented by one for each
+		// of the children recursively. Modifies elements in place, assumes
+		// cloned element to be passed in.
+		let child;
+		if (el.hasChildNodes()) {
+			const children = el.childNodes;
+			for (let i = 0, l = children.length; i < l; i++) {
+				child = children[i];
+				if (child instanceof HTMLElement) {
+					if (child.hasAttribute('data-o-hierarchical-nav-level')) {
+						// increment nav-level when attribute present
+						let origNavLevel = parseInt(child.getAttribute('data-o-hierarchical-nav-level'))
+						let updatedNavLevel = (isNaN(origNavLevel) ? 0 : origNavLevel) + 1
+						child.setAttribute('data-o-hierarchical-nav-level', updatedNavLevel);
+					}
+					incrementMenuDepths(child);
+				}
+			}
 		}
 	}
 

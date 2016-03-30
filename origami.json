@@ -39,6 +39,12 @@
 			"description": ""
 		},
 		{
+			"name": "responsive-nav-cloneable",
+			"template": "demos/src/responsive-nav-cloneable.mustache",
+			"expanded": true,
+			"description": ""
+		},		
+		{
 			"name": "mega-dropdown",
 			"template": "demos/src/mega-dropdown.mustache",
 			"expanded": false,
