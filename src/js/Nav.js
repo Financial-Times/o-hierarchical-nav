@@ -183,19 +183,31 @@ function Nav(rootEl) {
 		}
 	}
 
-	// Position a level 3 nav
-	function positionLevel3s() {
-		const openLevel2El = rootEl.querySelector('[data-o-hierarchical-nav-level="2"] > [aria-expanded="true"]');
-		const openLevel3El = rootEl.querySelector('[data-o-hierarchical-nav-level="2"] > [aria-expanded="true"] > ul');
+	// Position a level 3 nav and deeper
+	function positionExpandedLevels() {
+		// find deepest expanded menu element
+		const openMenus = rootEl.querySelectorAll('li[aria-expanded="true"] > ul[data-o-hierarchical-nav-level]');
+		
+		// find the deepest level currently open
+		let deepestLevel = -1;
+		for (let c = 0, l = openMenus.length; c < l; c++) {
+			deepestLevel = Math.max(deepestLevel, openMenus[c].getAttribute("data-o-hierarchical-nav-level"));
+		}
+		
+		// start checking space / collapsing where needed
+		for (let l = 2; l <= deepestLevel; l++) {
+			const openLevelParentEl = rootEl.querySelector('[data-o-hierarchical-nav-level="'+l+'"] > [aria-expanded="true"]');
+			const openLevelChildEl = rootEl.querySelector('[data-o-hierarchical-nav-level="'+l+'"] > [aria-expanded="true"] > ul');
 
-		if (openLevel2El && openLevel3El) {
-			positionChildListEl(openLevel2El, openLevel3El);
+			if (openLevelParentEl && openLevelChildEl) {
+				positionChildListEl(openLevelParentEl, openLevelChildEl);
+			}
 		}
 	}
 
-	// Position level 3s on resize
+	// Position level 3 and below on resize
 	function resize() {
-		positionLevel3s();
+		positionExpandedLevels();
 	}
 
 	// Set all tabIndexes of a tags to 0

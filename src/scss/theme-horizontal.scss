@@ -54,6 +54,18 @@
 		left: 100%;
 		top: 0;
 	}
+	
+	// level X, anything above 3
+	.o-hierarchical-nav__parent.o-hierarchical-nav__outside-right > [data-o-hierarchical-nav-level] {
+		position: absolute;
+		left: 100%;
+		top: 0;
+	}
+	
+	// Styling for level X, anything above 4
+	[data-o-hierarchical-nav-level] {
+		background-color: oColorsGetPaletteColor('grey-tint4');
+	}
 
 	// Show a right arrow when sub-level nav will be displayed to the right
 	.o-hierarchical-nav__parent.o-hierarchical-nav__outside-right[aria-expanded="true"] {
@@ -78,6 +90,8 @@
 	[data-o-hierarchical-nav-level='3'] {
 		background-color: oColorsGetPaletteColor('grey-tint4');
 	}
+
+
 
 	// Styling for a megadropdown. They are outside of the nav element, so need @at-root
 	@at-root .o-hierarchical-nav__mega-dropdown {

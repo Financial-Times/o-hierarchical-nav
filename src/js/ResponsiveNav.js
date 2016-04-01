@@ -91,8 +91,8 @@ function ResponsiveNav(rootEl) {
 				if (child instanceof HTMLElement) {
 					if (child.hasAttribute('data-o-hierarchical-nav-level')) {
 						// increment nav-level when attribute present
-						let origNavLevel = parseInt(child.getAttribute('data-o-hierarchical-nav-level'))
-						let updatedNavLevel = (isNaN(origNavLevel) ? 0 : origNavLevel) + 1
+						let origNavLevel = parseInt(child.getAttribute('data-o-hierarchical-nav-level'));
+						let updatedNavLevel = (isNaN(origNavLevel) ? 0 : origNavLevel) + 1;
 						child.setAttribute('data-o-hierarchical-nav-level', updatedNavLevel);
 					}
 					incrementMenuDepths(child);
