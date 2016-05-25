@@ -54,14 +54,14 @@
 		left: 100%;
 		top: 0;
 	}
-	
+
 	// level X, anything above 3
 	.o-hierarchical-nav__parent.o-hierarchical-nav__outside-right > [data-o-hierarchical-nav-level] {
 		position: absolute;
 		left: 100%;
 		top: 0;
 	}
-	
+
 	// Styling for level X, anything above 4
 	[data-o-hierarchical-nav-level] {
 		background-color: oColorsGetPaletteColor('grey-tint4');
@@ -70,11 +70,11 @@
 	// Show a right arrow when sub-level nav will be displayed to the right
 	.o-hierarchical-nav__parent.o-hierarchical-nav__outside-right[aria-expanded="true"] {
 		> a i {
-			@include oFtIconsGetSvg('arrow-right', oColorsGetPaletteColor('white'), 8, $apply-base-styles: false);
+			@include oIconsGetIcon('arrow-right', oColorsGetPaletteColor('white'), 8, $apply-base-styles: false);
 		}
 
 		> a:focus i {
-			@include oFtIconsGetSvg('arrow-right', oColorsGetColorFor(link-title-hover, text), 8, $apply-base-styles: false);
+			@include oIconsGetIcon('arrow-right', oColorsGetColorFor(link-title-hover, text), 8, $apply-base-styles: false);
 		}
 	}
 
