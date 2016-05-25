@@ -55,12 +55,12 @@
 .o-hierarchical-nav__parent > a {
 	// scss-lint:disable SelectorDepth
 	i {
-		@include oFtIconsGetSvg('arrow-down', oColorsGetPaletteColor('white'), 8, 8);
+		@include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white'), 8, 8);
 		padding-right: 6px;
 	}
 
 	&:focus i,
 	#{$o-hoverable-if-hover-enabled} &:hover i {
-		@include oFtIconsGetSvg('arrow-down', oColorsGetColorFor(link-title-hover, text), 8, $apply-base-styles: false);
+		@include oIconsGetIcon('arrow-down', oColorsGetColorFor(link-title-hover, text), 8, $apply-base-styles: false);
 	}
 }
