@@ -30,32 +30,22 @@
 			"name": "nav",
 			"template": "demos/src/nav.mustache",
 			"js": "demos/src/nav.js",
-			"expanded": false,
 			"description": ""
 		},
 		{
 			"name": "responsive-nav",
 			"template": "demos/src/responsive-nav.mustache",
-			"expanded": true,
 			"description": ""
 		},
 		{
-			"name": "responsive-nav-cloneable",
-			"template": "demos/src/responsive-nav-cloneable.mustache",
-			"expanded": true,
-			"description": ""
-		},		
-		{
 			"name": "mega-dropdown",
 			"template": "demos/src/mega-dropdown.mustache",
-			"expanded": false,
 			"description": ""
 		},
 		{
 			"name": "sub-component",
 			"sass": "demos/src/scss/sub-component.scss",
 			"template": "demos/src/sub-component.mustache",
-			"expanded": false,
 			"description": ""
 		}
 	]
