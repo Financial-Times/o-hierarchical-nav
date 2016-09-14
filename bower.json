@@ -13,6 +13,6 @@
     "ftdomdelegate": ">=1.0.0 <3",
     "o-squishy-list": ">=1.0.0 <3",
     "o-layers": ">=0.2.0 <3",
-    "o-icons": "^4.1.0"
+    "o-icons": "^4.4.2"
   }
 }

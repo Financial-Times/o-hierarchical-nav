@@ -70,11 +70,12 @@
 	// Show a right arrow when sub-level nav will be displayed to the right
 	.o-hierarchical-nav__parent.o-hierarchical-nav__outside-right[aria-expanded="true"] {
 		> a i {
-			@include oIconsGetIcon('arrow-right', oColorsGetPaletteColor('white'), 8, $apply-base-styles: false);
+			@include oIconsGetIcon('arrow-right', oColorsGetPaletteColor('white'), $_o-hierachical-nav-icon-size, $apply-base-styles: false, $iconset-version: 1);
+			vertical-align: middle;
 		}
 
 		> a:focus i {
-			@include oIconsGetIcon('arrow-right', oColorsGetColorFor(link-title-hover, text), 8, $apply-base-styles: false);
+			@include oIconsGetIcon('arrow-right', oColorsGetColorFor(link-title-hover, text), $_o-hierachical-nav-icon-size, $apply-base-styles: false, $iconset-version: 1);
 		}
 	}
 
