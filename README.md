@@ -147,11 +147,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
-
-## Known issues:
-
-* IE < 9 does't support the `<nav>` element. Products that need to support old IEs should use [HTML5Shiv](https://github.com/aFarkas/html5shiv) (note that it's bundled by default in [Modernizr](http://modernizr.com/).
-
 ----
 
 ## License

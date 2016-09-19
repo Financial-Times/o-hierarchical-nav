@@ -8,7 +8,8 @@
 	"browserFeatures": {
 		"required": [
 			"classlist",
-			"createevent"
+			"createevent",
+			"~html5-elements"
 		],
 		"optional": [
 			"datauri",
