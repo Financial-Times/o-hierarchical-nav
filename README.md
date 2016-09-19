@@ -2,21 +2,6 @@
 
 Responsive hierarchical navigation pattern.
 
-## Browser Support
-
-Tested and working on:
-
-|  Browsers  | Primary Experience | Core Experience |
-|:----------:|:------------------:|:---------------:|
-|   Chrome   |        35+         |       35+       |
-|   Firefox  |        30+         |       30+       |
-|   Safari   |        7+          |       7+        |
-|   IE       |        8+          |       8+        |
-
-Known issues:
-
-* IE < 9 does't support the `<nav>` element. Products that need to support old IEs should use [HTML5Shiv](https://github.com/aFarkas/html5shiv) (note that it's bundled by default in [Modernizr](http://modernizr.com/).
-
 ## Navigation
 
 All navigation options have the same general markup structure that you can see in [main.mustache](https://github.com/Financial-Times/o-hierarchical-nav/blob/master/main.mustache).
@@ -140,6 +125,8 @@ If you want to style __megadropdowns__, you need to add `@at-root` before the `.
 
 ## JavaScript instantiation
 
+### Manual instantiation
+
 An __o-hierarchical-nav__ object must be constructed for every `<nav>` you have on your page that uses this module.
 
 ```javascript
@@ -148,15 +135,17 @@ var nav = document.querySelector('.o-hierarchical-nav');
 var hierarchicalNav = new oHierarchicalNav(nav);
 ```
 
+### Auto-instantiation
+
 Alternatively, a `o.DOMContentLoaded` event can be dispatched on the `document` to auto-construct a __o-hierarchical-nav__ object for each element with a `data-o-component="o-hierarchical-nav"` attribute:
 
 ```javascript
+require('o-hierarchical-nav');
+
 document.addEventListener("DOMContentLoaded", function() {
 	document.dispatchEvent(new CustomEvent('o.DOMContentLoaded'));
 });
 ```
-
-All this really does is run the `oHierarchicalNav.init()` function, so if you don't want this module to initialise with all the others, you can run this when it suits you best.
 
 ----
 
