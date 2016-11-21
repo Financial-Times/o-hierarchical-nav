@@ -7,8 +7,7 @@
 		list-style-type: none;
 
 		[aria-hidden=true] {
-			// scss-lint:disable ImportantRule
-			display: none !important;
+			display: none !important; // sass-lint:disable-line no-important
 		}
 	}
 
@@ -19,11 +18,11 @@
 		color: oColorsGetPaletteColor('white');
 
 		// Prevent accidental double clicks and long taps from selecting text
-		// scss-lint:disable VendorPrefixes VendorPrefix
+		// sass-lint:disable no-vendor-prefixes
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
-
+		// sass-lint:enable no-vendor-prefixes
 		&:focus,
 		#{$o-hoverable-if-hover-enabled} &:hover {
 			color: oColorsGetColorFor(link-title-hover, text);
@@ -53,7 +52,7 @@
 // Styles for parents of other navs or controlled elements
 .o-hierarchical-nav [aria-controls] > a,
 .o-hierarchical-nav__parent > a {
-	// scss-lint:disable SelectorDepth
+	// sass-lint:disable SelectorDepth -- not supported by sass-lint
 	i {
 		@include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white'), $_o-hierachical-nav-icon-size, $_o-hierachical-nav-icon-size, $iconset-version: 1);
 		padding-right: 3px;

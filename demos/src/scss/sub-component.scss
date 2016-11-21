@@ -28,7 +28,7 @@
 		margin-top: 10px;
 		text-align: right;
 
-		//scss-lint:disable SelectorDepth
+		//sass-lint:disable SelectorDepth -- not supported by sass-lint
 		li {
 			border-top: 0;
 		}
