@@ -24,7 +24,7 @@
 	"demosDefaults": {
 		"sass": "demos/src/scss/demo.scss",
 		"js": "demos/src/responsive-nav.js",
-		"dependencies": ["o-fonts@^1.4.0"]
+		"dependencies": ["o-fonts@^2.0.0"]
 	},
 	"demos": [
 		{
