@@ -42,12 +42,6 @@
 			"name": "mega-dropdown",
 			"template": "demos/src/mega-dropdown.mustache",
 			"description": ""
-		},
-		{
-			"name": "sub-component",
-			"sass": "demos/src/scss/sub-component.scss",
-			"template": "demos/src/sub-component.mustache",
-			"description": ""
 		}
 	]
 }
