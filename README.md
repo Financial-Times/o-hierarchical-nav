@@ -1,4 +1,4 @@
-# Hierarchical nav [![Build Status](https://circleci.com/gh/Financial-Times/o-hierarchical-nav.png?style=shield&circle-token=e13dbb693f411e99914c9979cf1471e5c05b1397)](https://circleci.com/gh/Financial-Times/o-hierarchical-nav)
+# Hierarchical Nav [![Build Status](https://circleci.com/gh/Financial-Times/o-hierarchical-nav.png?style=shield&circle-token=e13dbb693f411e99914c9979cf1471e5c05b1397)](https://circleci.com/gh/Financial-Times/o-hierarchical-nav)
 
 Responsive hierarchical navigation pattern.
 
@@ -147,10 +147,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
+## Migration Guide
+
+### Updating from v4 to v5
+
+V4 -> V5 introduces the new major of o-colors. Updating to this new version will mean updating any other components that you have which are using `o-colors`. There are no other breaking changes in this release.
+
 ----
 
 ## License
-
-Copyright (c) 2016 Financial Times Ltd. All rights reserved.
 
 This software is published under the [MIT licence](http://opensource.org/licenses/MIT).

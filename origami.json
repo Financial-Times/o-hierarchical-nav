@@ -24,30 +24,24 @@
 	"demosDefaults": {
 		"sass": "demos/src/scss/demo.scss",
 		"js": "demos/src/responsive-nav.js",
-		"dependencies": ["o-fonts@^1.4.0"]
+		"dependencies": ["o-fonts@^3.0.0"]
 	},
 	"demos": [
 		{
 			"name": "nav",
 			"template": "demos/src/nav.mustache",
 			"js": "demos/src/nav.js",
-			"description": ""
+			"description": "A responsive multi-level menu for site navigation"
 		},
 		{
 			"name": "responsive-nav",
 			"template": "demos/src/responsive-nav.mustache",
-			"description": ""
+			"description": "A demo responsive layout where the navigation is hidden behind a single item at a narrow screen width"
 		},
 		{
 			"name": "mega-dropdown",
 			"template": "demos/src/mega-dropdown.mustache",
-			"description": ""
-		},
-		{
-			"name": "sub-component",
-			"sass": "demos/src/scss/sub-component.scss",
-			"template": "demos/src/sub-component.mustache",
-			"description": ""
+			"description": "A mega dropdown menu for sites with a large tree-like navigation"
 		}
 	]
 }
