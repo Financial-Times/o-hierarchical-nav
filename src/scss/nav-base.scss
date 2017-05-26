@@ -25,7 +25,7 @@
 		// sass-lint:enable no-vendor-prefixes
 		&:focus,
 		#{$o-hoverable-if-hover-enabled} &:hover {
-			color: oColorsGetColorFor(link-title-hover, text);
+			color: oColorsGetPaletteColor('white');
 		}
 	}
 }
@@ -61,6 +61,6 @@
 
 	&:focus i,
 	#{$o-hoverable-if-hover-enabled} &:hover i {
-		@include oIconsGetIcon('arrow-down', oColorsGetColorFor(link-title-hover, text), $_o-hierachical-nav-icon-size, $apply-base-styles: false, $iconset-version: 1);
+		@include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white'), $_o-hierachical-nav-icon-size, $apply-base-styles: false, $iconset-version: 1);
 	}
 }

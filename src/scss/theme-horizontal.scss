@@ -32,7 +32,7 @@
 
 		li {
 			display: block;
-			border-top: 1px solid #666666;
+			border-top: 1px solid oColorsGetPaletteColor('white');
 		}
 
 		a {
@@ -45,7 +45,7 @@
 		border-right: $_o-hierarchical-nav-dropdown-border;
 		border-bottom: $_o-hierarchical-nav-dropdown-border;
 		border-left: $_o-hierarchical-nav-dropdown-border;
-		background-color: oColorsGetPaletteColor('grey-tint5');
+		background-color: oColorsGetPaletteColor('black-80');
 		position: absolute;
 	}
 
@@ -64,7 +64,7 @@
 
 	// Styling for level X, anything above 4
 	[data-o-hierarchical-nav-level] {
-		background-color: oColorsGetPaletteColor('grey-tint4');
+		background-color: oColorsGetPaletteColor('black-70');
 	}
 
 	// Show a right arrow when sub-level nav will be displayed to the right
@@ -75,7 +75,7 @@
 		}
 
 		> a:focus i {
-			@include oIconsGetIcon('arrow-right', oColorsGetColorFor(link-title-hover, text), $_o-hierachical-nav-icon-size, $apply-base-styles: false, $iconset-version: 1);
+			@include oIconsGetIcon('arrow-right', oColorsGetPaletteColor('white'), $_o-hierachical-nav-icon-size, $apply-base-styles: false, $iconset-version: 1);
 		}
 	}
 
@@ -89,7 +89,7 @@
 
 	// Styling for level 3
 	[data-o-hierarchical-nav-level='3'] {
-		background-color: oColorsGetPaletteColor('grey-tint4');
+		background-color: oColorsGetPaletteColor('black-70');
 	}
 
 
@@ -103,8 +103,8 @@
 		padding: 15px 33px;
 		min-height: 100px;
 		width: 100%;
-		color: oColorsGetPaletteColor('grey-tint5');
-		background-color: oColorsGetPaletteColor('pink-tint1');
+		color: oColorsGetPaletteColor('black-80');
+		background-color: oColorsGetPaletteColor('black-5');
 		z-index: $_o-hierarchical-nav-mega-dropdown-zindex;
 	}
 
