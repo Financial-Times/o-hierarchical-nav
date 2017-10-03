@@ -187,13 +187,13 @@ function Nav(rootEl) {
 	function positionExpandedLevels() {
 		// find deepest expanded menu element
 		const openMenus = rootEl.querySelectorAll('li[aria-expanded="true"] > ul[data-o-hierarchical-nav-level]');
-		
+
 		// find the deepest level currently open
 		let deepestLevel = -1;
 		for (let c = 0, l = openMenus.length; c < l; c++) {
 			deepestLevel = Math.max(deepestLevel, openMenus[c].getAttribute("data-o-hierarchical-nav-level"));
 		}
-		
+
 		// start checking space / collapsing where needed
 		for (let l = 2; l <= deepestLevel; l++) {
 			const openLevelParentEl = rootEl.querySelector('[data-o-hierarchical-nav-level="'+l+'"] > [aria-expanded="true"]');
