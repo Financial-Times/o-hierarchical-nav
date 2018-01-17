@@ -23,9 +23,12 @@
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		// sass-lint:enable no-vendor-prefixes
-		&:focus,
+		&:focus {
+			border: 1px solid oColorsGetPaletteColor('teal-90');
+		}
+
 		#{$o-hoverable-if-hover-enabled} &:hover {
-			color: oColorsGetPaletteColor('paper');
+			color: oColorsGetPaletteColor('white');
 		}
 	}
 }
