@@ -27,14 +27,13 @@
 	},
 	"demosDefaults": {
 		"sass": "demos/src/scss/demo.scss",
-		"js": "demos/src/responsive-nav.js",
+		"js": "demos/src/js/responsive-nav.js",
 		"dependencies": ["o-fonts@^3.0.0","o-normalise@^1.0.0"]
 	},
 	"demos": [
 		{
 			"name": "nav",
 			"template": "demos/src/nav.mustache",
-			"js": "demos/src/nav.js",
 			"description": "A responsive multi-level menu for site navigation"
 		},
 		{

@@ -25,7 +25,7 @@
 		// sass-lint:enable no-vendor-prefixes
 		&:focus,
 		#{$o-hoverable-if-hover-enabled} &:hover {
-			color: oColorsGetPaletteColor('white');
+			color: oColorsGetPaletteColor('paper');
 		}
 	}
 }
