@@ -45,6 +45,11 @@
 			"name": "mega-dropdown",
 			"template": "demos/src/mega-dropdown.mustache",
 			"description": "A mega dropdown menu for sites with a large tree-like navigation"
+		},
+		{
+			"name": "pa11y",
+			"template": "demos/src/pa11y.mustache",
+			"hidden": true
 		}
 	]
 }
