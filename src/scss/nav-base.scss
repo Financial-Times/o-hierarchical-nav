@@ -14,7 +14,6 @@
 	a {
 		text-decoration: none;
 		cursor: pointer;
-		outline: none;
 		color: oColorsGetPaletteColor('white');
 
 		// Prevent accidental double clicks and long taps from selecting text
@@ -23,10 +22,6 @@
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		// sass-lint:enable no-vendor-prefixes
-		&:focus,
-		#{$o-hoverable-if-hover-enabled} &:hover {
-			color: oColorsGetPaletteColor('white');
-		}
 	}
 }
 
