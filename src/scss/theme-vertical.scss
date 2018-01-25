@@ -11,6 +11,10 @@
 		display: block;
 	}
 
+	[data-o-hierarchical-nav-level] {
+		background-color: oColorsGetPaletteColor('black-70');
+		position: relative;
+	}
 	// Indent sub-levels
 
 	[data-o-hierarchical-nav-level='2'] {
