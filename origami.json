@@ -32,21 +32,25 @@
 	},
 	"demos": [
 		{
+			"title": "Nav",
 			"name": "nav",
 			"template": "demos/src/nav.mustache",
 			"description": "A responsive multi-level menu for site navigation"
 		},
 		{
+			"title": "Responsive Nav",
 			"name": "responsive-nav",
 			"template": "demos/src/responsive-nav.mustache",
 			"description": "A demo responsive layout where the navigation is hidden behind a single item at a narrow screen width"
 		},
 		{
+			"title": "Mega Dropdown",
 			"name": "mega-dropdown",
 			"template": "demos/src/mega-dropdown.mustache",
 			"description": "A mega dropdown menu for sites with a large tree-like navigation"
 		},
 		{
+			"title": "Pa11y",
 			"name": "pa11y",
 			"template": "demos/src/pa11y.mustache",
 			"hidden": true
