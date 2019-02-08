@@ -1,5 +1,3 @@
-/*global require*/
-
 import oHierarchicalNav from '../../../main.js';
 
 document.addEventListener('DOMContentLoaded', function() {
