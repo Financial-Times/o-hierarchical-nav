@@ -1,8 +1,7 @@
-/*global require, module*/
+import DomDelegate from 'ftdomdelegate';
 
-const DomDelegate = require('ftdomdelegate');
-const oDom = require('o-dom');
-const utils = require('./utils');
+import oDom from 'o-dom';
+import utils from './utils';
 
 function Nav(rootEl) {
 
@@ -270,4 +269,4 @@ function Nav(rootEl) {
 	this.destroy = destroy;
 }
 
-module.exports = Nav;
+export default Nav;

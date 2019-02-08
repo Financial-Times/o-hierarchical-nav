@@ -21,7 +21,7 @@ function dispatchCustomEvent(el, name, data) {
 	}
 }
 
-function isIE8() {
+function detectedIE8() {
 	const b = document.createElement('B');
 	const docElem = document.documentElement;
 	let isIE;
@@ -33,6 +33,6 @@ function isIE8() {
 	return isIE;
 }
 
-exports.isIE8 = isIE8();
-exports.nodeListToArray = nodeListToArray;
-exports.dispatchCustomEvent = dispatchCustomEvent;
+export var isIE8 = detectedIE8();
+export {nodeListToArray};
+export {dispatchCustomEvent};
