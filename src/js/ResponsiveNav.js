@@ -1,9 +1,9 @@
-/*global require,module,document,HTMLElement*/
+/* global document, HTMLElement */
 
-const SquishyList = require('o-squishy-list');
-const DomDelegate = require('ftdomdelegate');
-const oViewport = require('o-viewport');
-const Nav = require('./Nav');
+import SquishyList from 'o-squishy-list';
+import DomDelegate from 'ftdomdelegate';
+import oViewport from 'o-viewport';
+import Nav from './Nav';
 
 function ResponsiveNav(rootEl) {
 
@@ -245,4 +245,4 @@ ResponsiveNav.init = function(el) {
 	return responsiveNavs;
 };
 
-module.exports = ResponsiveNav;
+export default ResponsiveNav;
