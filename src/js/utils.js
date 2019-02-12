@@ -33,6 +33,9 @@ function detectedIE8() {
 	return isIE;
 }
 
-export var isIE8 = detectedIE8();
-export {nodeListToArray};
-export {dispatchCustomEvent};
+
+export {
+	dispatchCustomEvent,
+	nodeListToArray,
+	isIE8: detectedIE8()
+};
