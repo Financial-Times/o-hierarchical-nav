@@ -1,7 +1,6 @@
 import DomDelegate from 'ftdomdelegate';
-
-import oDom from 'o-dom';
 import utils from './utils';
+
 
 function Nav(rootEl) {
 
@@ -140,7 +139,7 @@ function Nav(rootEl) {
 
 	// Get same level items and collapse them
 	function collapseSiblingItems(itemEl) {
-		const listLevel = oDom.getClosestMatch(itemEl, 'ul').getAttribute('data-o-hierarchical-nav-level');
+		const listLevel = itemEl.closest('ul').getAttribute('data-o-hierarchical-nav-level');
 		const listItemEls = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="' + listLevel + '"] > li[aria-expanded="true"]');
 
 		for (let c = 0, l = listItemEls.length; c < l; c++) {
@@ -169,7 +168,7 @@ function Nav(rootEl) {
 
 	// Handle clicks ourselved by expanding or collapsing selected element
 	function handleClick(ev) {
-		const itemEl = oDom.getClosestMatch(ev.target, 'li');
+		const itemEl = ev.target.closest('li');
 
 		if (itemEl && isControlEl(itemEl)) {
 			ev.preventDefault();
