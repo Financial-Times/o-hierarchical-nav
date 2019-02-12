@@ -130,7 +130,7 @@ If you want to style __megadropdowns__, you need to add `@at-root` before the `.
 An __o-hierarchical-nav__ object must be constructed for every `<nav>` you have on your page that uses this module.
 
 ```javascript
-var oHierarchicalNav = require('o-hierarchical-nav');
+import oHierarchicalNav from '../../../main.js';
 var nav = document.querySelector('.o-hierarchical-nav');
 var hierarchicalNav = new oHierarchicalNav(nav);
 ```
@@ -140,7 +140,7 @@ var hierarchicalNav = new oHierarchicalNav(nav);
 Alternatively, a `o.DOMContentLoaded` event can be dispatched on the `document` to auto-construct a __o-hierarchical-nav__ object for each element with a `data-o-component="o-hierarchical-nav"` attribute:
 
 ```javascript
-require('o-hierarchical-nav');
+import oHierarchicalNav from '../../../main.js';
 
 document.addEventListener("DOMContentLoaded", function() {
 	document.dispatchEvent(new CustomEvent('o.DOMContentLoaded'));
