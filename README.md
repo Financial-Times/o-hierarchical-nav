@@ -1,5 +1,8 @@
 # Hierarchical Nav [![Build Status](https://circleci.com/gh/Financial-Times/o-hierarchical-nav.png?style=shield&circle-token=e13dbb693f411e99914c9979cf1471e5c05b1397)](https://circleci.com/gh/Financial-Times/o-hierarchical-nav) [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](#licence)
 
+
+_Deprecated, please use [o-header-services](https://registry.origami.ft.com/components/o-header-services) instead._
+
 Responsive hierarchical navigation pattern.
 
 ## Navigation
